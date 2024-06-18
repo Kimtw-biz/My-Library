@@ -1,11 +1,5 @@
 import 'package:flutter/widgets.dart';
 
-//TODO::Feature Auto Gap
-//TODO::Feature Constraints
-//TODO::Feature Margin
-
-//ISSUE::Flexible / Flex
-
 class AutoLayout extends StatelessWidget {
   const AutoLayout._({
     super.key,
@@ -150,55 +144,4 @@ class AutoLayout extends StatelessWidget {
             )
         };
       });
-
-  // List<Widget> _applyHorizontalGap() => List.generate(
-  //       children.length,
-  //       (index) {
-  //         final EdgeInsets padding = switch (textDirection) {
-  //           TextDirection.ltr || null when index < children.length - 1 => EdgeInsets.only(right: mainAxisGap),
-  //           TextDirection.rtl when index < children.length - 1 => EdgeInsets.only(left: mainAxisGap),
-  //           _ => EdgeInsets.zero,
-  //         };
-
-  //         if (children[index] is Flexible) {
-  //           return Flexible(
-  //             key: children[index].key,
-  //             child: Padding(
-  //               padding: padding,
-  //               child: (children[index] as Flexible).child,
-  //             ),
-  //           );
-  //         } else {
-  //           return Padding(
-  //             key: children[index].key,
-  //             padding: padding,
-  //             child: children[index],
-  //           );
-  //         }
-  //       },
-  //     );
-
-  // List<Widget> _applyVerticalGap() => List.generate(children.length, (index) {
-  //       final EdgeInsets padding = switch (verticalDirection) {
-  //         VerticalDirection.down when index < children.length - 1 => EdgeInsets.only(bottom: mainAxisGap),
-  //         VerticalDirection.up when index < children.length - 1 => EdgeInsets.only(top: mainAxisGap),
-  //         _ => EdgeInsets.zero,
-  //       };
-
-  //       if (children[index] is Flexible) {
-  //         return Flexible(
-  //           key: children[index].key,
-  //           child: Padding(
-  //             padding: padding,
-  //             child: (children[index] as Flexible).child,
-  //           ),
-  //         );
-  //       } else {
-  //         return Padding(
-  //           key: children[index].key,
-  //           padding: padding,
-  //           child: children[index],
-  //         );
-  //       }
-  //     });
 }
